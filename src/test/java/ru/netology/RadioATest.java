@@ -28,6 +28,18 @@ public class RadioATest {
         int actual = radio.getCurrentStation();
         Assertions.assertEquals(expected, actual);
     }
+    @Test
+    public void shouldMaxNine() {
+        Radio radio = new Radio(15);
+
+
+        radio.setCurrentStation(9);
+
+
+        int expected = 9;
+        int actual = radio.getCurrentStation();
+        Assertions.assertEquals(expected, actual);
+    }
 
 
 }
